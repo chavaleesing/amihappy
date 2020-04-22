@@ -1,0 +1,11 @@
+./node_modules
+node_modules
+.env*
+.nyc_output
+.vscode
+.idea
+coverage
+checkstyle.xml
+.DS_Store
+TODO
+.directory

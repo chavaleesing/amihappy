@@ -1,0 +1,23 @@
+{
+  "name": "amihappy",
+  "version": "1.0.0",
+  "description": "happy measurement tool :)",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon amihappy/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chavaleesing/amihappy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/chavaleesing/amihappy/issues"
+  },
+  "homepage": "https://github.com/chavaleesing/amihappy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.9.10"
+  }
+}
