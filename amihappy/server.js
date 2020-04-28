@@ -24,10 +24,10 @@ const products = [
   ]
 
 
-app.get('/happytest/:commennt', (req, res) => {
+app.get('/happytest/:commennt', (req, ress) => {
     console.log("calling happytest ...")
     const { params } = req
-    res.json({ 
+    ress.json({ 
         message: 'How are you today??',
         params
     })
