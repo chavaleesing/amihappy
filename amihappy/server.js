@@ -1,7 +1,14 @@
-const express = require('express')
-const app = express()
-const mongoose = require('mongoose')
+const express = require('express');
+const mongoose = require('mongoose');
+const cp = require('child_process')
 
+
+cp.exec('ls /',{s: "qwe"} , (err, stdout, stderr) => {
+  console.log(stdout)
+})
+
+const a = 1
+const app = express()
 const products = [
     {
       id: '1001',
@@ -34,7 +41,7 @@ app.get('/happytest/:commennt', (req, ress) => {
 })
 
 app.get('/a1', (req, res) => {
-    console.log("calling a1 DB ...")
+    console.log(`calling a1 DB ...${req} `)
 
     mongoose.connect('mongodb://localhost:27017/test', { useNewUrlParser: true })
     const Schema = mongoose.Schema
